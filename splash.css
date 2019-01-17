@@ -1,0 +1,117 @@
+html{
+    /* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/image.jpg') no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('images/image.jpg') no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/image.jpg') no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/image.jpg') no-repeat;
+  background: -ms-linear-gradient(top, rgba(201, 196, 196, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/image.jpg') no-repeat;
+  background: linear-gradient(to bottom, rgba(57, 30, 131, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/image.jpg') no-repeat; */
+
+  background: linear-gradient(to bottom, rgba(7, 38, 83, 0.78) 59%, rgba(0, 0, 0, 0.72) 100%), url('images/bg-image.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.logo p{
+    color: #ffffff;
+    font-size: 23px;
+    text-align: center;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+.welcome{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.welcome h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+button {
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.welcome button{
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 7px 25px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.welcome p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.welcome span{
+    text-decoration: underline;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1281px) {
+  
+    .logo{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+    
+    .welcome{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+    
+}
